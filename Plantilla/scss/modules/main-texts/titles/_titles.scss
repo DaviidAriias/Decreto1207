@@ -1,0 +1,33 @@
+//Titulos genericos para todos los elementos
+h1, h2, h3, h4 {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+
+    @include defaultFont(1,$fw: bold);
+
+    //Titulos vinculación formularios
+    &.headVinculation{
+        @include defaultFont(0, $fz: $font-h, $ta: center);
+        margin: 0 0;
+    }
+    
+    &.subHeadVinculation{
+        @include defaultFont(0, $fz: $font-h - 2, $ta: center, $fw: thin);
+        margin: 0 0;
+    }
+}
+
+//Titulos usados solo para web
+.titlesHeader--Desktop{
+    display: none;
+    width: $widthA-100pc;
+    margin: 25px auto;
+    h1, h3{
+        @include defaultFont(1, $fz: $font-h + 4, $fw: bold, $c: $red-primary);
+        margin: 0;
+    }
+    h3{
+        @include defaultFont(0, $fz:$font-h - 2, $c: $subtitle-desktop);
+    }
+}

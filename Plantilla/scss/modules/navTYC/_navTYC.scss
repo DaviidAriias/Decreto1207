@@ -1,0 +1,38 @@
+.navTYC{
+    width: calc(100% - 30px);
+    margin: 15px auto 0;
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        &:last-of-type{
+            margin-bottom: 0px;
+        }
+        li{
+            margin-right: 10px;
+            a{
+                @include defaultFont(1, $fz: 13px, $c: #000000);
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.iframeContainer{
+    display: inline-block;
+    width: 100%;
+    //height: calc(100vh - 115px);
+    //overflow-y: auto;
+}
+
+iframe{
+    display: inline-block;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.textscontainer{
+    display: flex;
+    flex-direction: column;
+    //height: calc(100vh - 100px);
+}

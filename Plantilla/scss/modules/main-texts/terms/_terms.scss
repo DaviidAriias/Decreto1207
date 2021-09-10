@@ -1,0 +1,31 @@
+//Terminos y Condiciones
+.container{
+    &--textTYC{
+        h2{
+            @include defaultFont(1, $fz: $font-p + 3, $ta: center);
+        }
+        p{
+            @include defaultFont(1,$ta: justify);
+            &.sublist{
+                padding-left: 15px;
+            }
+        }
+        table {
+            width: 100%;
+            margin-top: 15px;
+            border: 1px solid #000;
+            border-collapse: collapse;
+            th, td {
+               width: 25%;
+               text-align: left;
+               vertical-align: top;
+               border: 1px solid #000;
+               border-collapse: collapse;
+               padding: 0.3em;
+            }
+         }
+         .subLista {
+            padding-left: 10px;
+        }
+    }
+}

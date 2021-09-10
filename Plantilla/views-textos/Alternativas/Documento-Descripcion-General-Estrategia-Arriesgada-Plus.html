@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="https://www.davivienda.com/PersonasDaviviendaNewTheme/images/faviconDav.ico" type="image/x-icon">
+    <title>Davivienda S.A.</title>
+    <!-- Styles -->
+    <style>
+        /* Font */
+        @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:300,400,500,700);
+
+        /* Reset */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none !important;
+            font-family: "Roboto", sans-serif;
+            font-weight: normal;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+        }
+
+        body{
+            max-width: 100%;
+            position: relative;
+            overflow-x: hidden;
+            font-size: 0;
+            box-sizing: border-box;
+            overscroll-behavior-x: none;
+            overscroll-behavior-y: none;
+        }
+
+        .container {
+            display: block;
+            width: 100%;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 0;
+            text-align: center;
+            position: relative;
+            padding-bottom: 30px;
+        }
+
+        .contentBox, .contentBox--typeA, .contentBox--typeB, .contentBox--typeC, .contentBox--result {
+            display: inline-block;
+            width: calc(100% - 30px);
+            border-radius: 10px;
+            margin: 15px auto 0;
+            padding: 15px;
+            position: relative;
+            
+        }
+
+        .container--textTYC h2 {
+            font-family: "Roboto", sans-serif;
+            font-size: 17px;
+            line-height: 19px;
+            font-weight: 400;
+            text-align: center;
+            font-style: normal;
+            color: #575757;
+        }
+
+        .container--textTYC p {
+            font-family: "Roboto", sans-serif;
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 400;
+            text-align: justify;
+            font-style: normal;
+            color: #575757;
+        }
+
+        .container--textTYC table {
+            width: 100%;
+            margin-top: 15px;
+            border: 1px solid #000;
+            border-collapse: collapse;
+        }
+
+        .container--textTYC table th, .container--textTYC table td {
+            width: 25%;
+            text-align: left;
+            vertical-align: top;
+            border: 1px solid #000;
+            border-collapse: collapse;
+            padding: 6px;
+        }
+
+        strong, b {
+            font-family: "Roboto", sans-serif;
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 700;
+            text-align: left;
+            font-style: normal;
+            color: #575757;
+        }
+
+        h1, h2, h3, h4 {
+            display: inline-block;
+            width: 100%;
+            margin: 0;
+            font-family: "Roboto", sans-serif;
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 700;
+            text-align: left;
+            font-style: normal;
+            color: #575757;
+        }
+
+        .contButtons {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin: 15px auto 0;
+        }
+
+        .button, .button--back, .button--secondary, .button--primary {
+            display: inline-block;
+            width: 45%;
+            min-width: 110px;
+            max-width: 200px;
+            margin: 0 5px;
+            padding: 9px 15px;
+            border: none;
+            outline: none;
+            border-radius: 6px;
+            background-color: #939393;
+            font-family: "Roboto", sans-serif;
+            font-size: 18px;
+            line-height: 20px;
+            font-weight: 700;
+            text-align: center;
+            font-style: normal;
+            color: #fff;
+            transition: all 0.3s;
+            cursor: pointer;
+            box-shadow: inherit;
+        }
+
+        .button--primary {
+            background-color: #dd141d;
+        }
+
+        .button--secondary:hover {
+            background-color: #848484;
+        }
+
+        .button--primary:hover {
+            background-color: #c7121a;
+        }
+
+        /* Breakpoints */
+        @media (max-width: 50em) {
+            body {
+                background-color: #ededed;
+            }
+
+            .btn-back {
+                display: flex;
+            }
+
+            .contentBox {
+                padding: 16px;
+                background-color: #F8F8F8;
+                box-shadow: 1px 3px 5px #0000002b;
+            }
+
+            .container.container-text-tyc p{
+                font-size: 14px;
+            }
+
+            .container.container-text-tyc h2{
+                font-size: 17px;
+            }
+
+            .container.container-text-tyc h3{
+                font-size: 15px;
+            }
+
+            table.table-1 td, th,
+            table.table-2 td, th {
+                font-size: 14px;
+            }
+
+            .cont-btn .regresar {
+                display: none;
+            }
+        }
+
+        
+    </style>
+    <!-- End - Styles -->
+</head>
+
+<body>
+    <section class="container">
+
+        <div class="contentBox">
+            <div class="container--textTYC">
+                <h2 class="bold no-margin">
+                    Fondo Voluntario de Pensión DAFUTURO
+                    <br><br>
+                    Documento de Descripción General de la Alternativa Estandarizada:
+                    <br>
+                    ESTRATEGIA DE INVERSIÓN DAFUTURO ARRIESGADA PLUS
+                    <br><br>
+                </h2>
+
+                <p>
+                    <strong>1. Comisiones:</strong> las comisiones se van a cobrar por cada uno de los portafolios que componen la Alternativa, cuyas condiciones, base y porcentaje se definen en el respectivo prospecto de portafolio, de conformidad con establecido en el Reglamento Estandarizado, en el Título 1 del capítulo sexto (COMISIONES Y GASTOS) y en su Anexo 4 (Metodología para determinar la Comisión Fija y Variable). Igualmente, las comisiones vigentes de cada portafolio se pueden consultar en el cuadro comparativo de comisiones publicado en el sitio web: www.fidudavivienda.davivienda.com
+                    <br><br>
+                    <strong>2. Duración:</strong> Esta Alternativa es de  naturaleza abierta por lo cual su duración será igual a la de la Sociedad Administradora prevista en sus estatutos sociales hasta el día 14 de diciembre del año 2042 y podrá prorrogarse, hasta por el mismo término en que se prorrogue la duración de la Sociedad Administradora, previa decisión de la Junta Directiva de dicha sociedad. El término de duración de la Sociedad Administradora también se dará a conocer a través del sitio web www.fidudavivienda.davivienda.com.
+                    <br><br>
+                    <strong>3. Causales y Procedimiento de Terminación Anticipada:</strong> no aplica
+                    <br><br>
+                    <strong>4. Funcionamiento de la Alternativa:</strong> esta Alternativa está diseñada como el mecanismo a través del cual se entrega al Partícipe la composición óptima, diversificada e idónea que se ajusta al perfil del mismo. Para este efecto,  se establece como regla general que la composición de la Estrategia de Inversión Dafuturo Arriesgada Plus se debe mantener en todo momento, con el fin de asegurar la composición óptima de la misma ante cualquier situación del mercado.  Derivado de lo anterior, los aportes y redenciones que efectúe el Partícipe se realizarán de manera proporcional, respetando siempre la composición de los portafolios que conforman la Alternativa.  El Partícipe no podrá modificar dicha composición vía traslados entre portafolios, ni modificar la participación de futuros aportes, mientras pertenezca a esta Alternativa.  Sin perjuicio de lo anterior, el Partícipe podrá retirarse en cualquier momento de la Alternativa, bien sea, a una alternativa autogestionada u a otra alternativa estandarizada, siempre y cuando la alternativa seleccionada esté disponible de acuerdo con su perfil de riesgo.
+                    <br><br>
+                    <strong>5. Plan de Inversión: </strong>
+                    <br><br>
+                    <strong>a.</strong> Objeto de la Estrategia de Inversión Dafuturo Arriesgada Plus
+                    <br><br>
+                    <strong>•</strong> Brindar al Partícipe la mejor composición de portafolios, a partir de las diferentes opciones de inversión del Fondo Voluntario de Pensión Dafuturo.
+                    <br><br>
+                    <strong>•</strong> Proporcionar al Partícipe altos retornos sobre la inversión con un crecimiento del capital en el largo plazo, la generación de valor se plantea a través de la exposición en activos con mayor potencial de retorno, cuyo precio ha registrado históricamente volatilidades considerables, de tal manera que su riesgo de pérdida es de nivel alto con grado superior.
+                    <br><br>
+                    <strong>b.</strong> Portafolios aceptables
+                    <br><br>
+                    Todos los portafolios que conforman el plan abierto del Fondo Voluntario de Pensión Dafuturo.  La información detallada de cada Portafolio y su diversificación se encontrará en el Prospecto correspondiente, disponible a través del sitio web www.fidudavivienda.davivienda.com y/o en los canales definidos por la Sociedad Administradora e informados por esta o por las entidades cuya red sea contratada por la misma.
+                    <br><br>
+                    <strong>c.</strong> Información general de los portafolios que componen la Alternativa
+                    <br><br>
+                    Se describen a continuación los portafolios que hacen parte  del Plan Abierto del Fondo Voluntario de Pensión Dafuturo. Sin perjuicio de que más adelante se puedan cerrar o crear nuevos portafolios abiertos o cerrados,, los cuales podrán hacer parte de la Alternativa:
+                    <br><br>
+                    <strong>Preserva:</strong> portafolio de perfil conservador, con horizonte de inversión de corto plazo, el cual busca mantener el capital, invirtiendo principalmente en cuentas de ahorro denominadas en pesos colombianos.
+                    <br>
+                    <strong>Capital:</strong> portafolio de perfil conservador, con horizonte de inversión de corto plazo, el cual busca mantener el capital, invirtiendo en activos de renta fija denominados principalmente en pesos colombianos, con una participación mayoritaria en títulos menores a un año y recursos a la vista.
+                    <br>
+                    <strong>Estable:</strong> portafolio de perfil conservador, con horizonte de inversión de corto plazo, el cual busca mantener el capital, invirtiendo en activos de renta fija denominados principalmente en pesos colombianos
+                    <br>
+                    <strong>Diversificado Conservador:</strong> portafolio de perfil conservador, con horizonte de inversión de mediano plazo, el cual busca diversificación con mayor participación en títulos de deuda local y una menor proporción en títulos de deuda internacional, acciones locales y en activos financieros con subyacente inmobiliario. La Sociedad Administradora podrá ejecutar la estrategia invirtiendo directamente en los activos admisibles o en fondos o ETF ́s,que permitan alcanzar el objetivo de inversión.
+                    <br>
+                    <strong>Renta Fija Pesos:</strong> portafolio de perfil moderado, con horizonte de inversión de mediano plazo, el cual busca crecimiento de capital a través de la inversión en valores de deuda emitidos principalmente en pesos colombianos. La Sociedad Administradora podrá ejecutar la estrategia invirtiendo directamente en los activos admisibles o en fondos o ETF ́s que permitan alcanzar el objetivo de inversión.
+                    <br>
+                    <strong>Sostenible Global:</strong> portafolio balanceado de perfil moderado con horizonte de inversión de mediano y largo plazo, el cual invertirá en instrumentos calificados ASG de renta fija y renta variable internacional con exposición al dólar. La Sociedad Administradora podrá contar con cobertura parcial del riesgo cambiario.
+                    <br>
+                    <strong>Diversificado Moderado:</strong> portafolio de perfil moderado, con horizonte de inversión de mediano y largo plazo, el cual busca diversificar con mayor participación en títulos de deuda de emisores locales e internacionales y una menor proporción en acciones y en activos financieros con subyacente inmobiliario. La Sociedad Administradora podrá ejecutar la estrategia invirtiendo directamente en los activos admisibles o en fondos o ETF ́s,que permitan alcanzar el objetivo de inversión:
+                    <br>
+                    <strong>Acciones Global:</strong> portafolio de perfil arriesgado, con horizonte de inversión de largo plazo, el cual busca crecimiento de capital a través de la inversión en acciones de emisores extranjeros. La Sociedad Administradora podrá ejecutar la estrategia invirtiendo directamente en los activos admisibles o en fondos o ETF ́s que permitan alcanzar el objetivo de inversión.
+                    <br>
+                    <strong>Consumo Global:</strong> portafolio de perfil arriesgado, con horizonte de inversión de largo plazo,  que ofrece la oportunidad de invertir en acciones de empresas líderes en mercados desarrollados y emergentes de todo el mundo, que impulsan y aprovechan las tendencias dominantes del consumo en el largo plazo.
+                    <br>
+                    <strong>Renta Fija Global:</strong> portafolio de perfil arriesgado, con horizonte de inversión de mediano y largo plazo, el cual busca crecimiento de capital a través de la inversión en valores de deuda emitidos en moneda extranjera. La Sociedad Administradora podrá ejecutar la estrategia invirtiendo directamente en los activos admisibles o en fondos o ETF ́s que permitan alcanzar el objetivo de inversión.
+                    <br>
+                    <strong>Oro:</strong> portafolio de perfil arriesgado que propende por el crecimiento de capital, a través de inversión en fondos bursátiles internacionales que reflejan el comportamiento del precio del (los lingotes) de oro.
+                    <br>
+                    <strong>Acciones Colombia:</strong> portafolio de perfil arriesgado, con horizonte de inversión de largo plazo, el cual busca crecimiento de capital a través de la inversión en acciones locales. La Sociedad Administradora podrá ejecutar la estrategia invirtiendo directamente en los activos admisibles o en fondos o ETF ́s que permitan alcanzar el objetivo de inversión.
+                    <br><br>
+                    <strong>d.</strong> Límites mínimos y máximos por portafolio
+                    <br><br>
+                    Se describen a continuación los límites para los portafolios que conforman actualmente la Estrategia de Inversión Dafuturo Arriesgada Plus, dentro de los cuales se define la composición óptima de la misma por medio de los rebalanceos, respetando siempre que la estrategia de inversión de manera integral mantenga un nivel de riesgo conservador y cumpla el objeto de la misma descrito en literal a. del numeral 5. del presente documento:
+                    <br><br>
+                </p>
+
+                <div class="subLista">
+                    <p>
+                        Portafolios Conservadores: Hasta 100%
+                        <br>
+                        Portafolios Moderados: Hasta 100%
+                        <br>
+                        Portafolios Arriesgados: Hasta 100%
+                        <br><br>
+                    </p>
+                </div>
+
+                <p>
+                    <strong>e.</strong> Índice de referencia
+                    <br><br>
+                    La Alternativa no tiene un índice particular de referencia, no obstante  cada portafolio que hace parte de la misma, puede tener su propio índice de referencia, en cuyo caso estará detallado y publicado en numeral 5.10 del prospecto  de cada portafolio.
+                    <br><br>
+                    <strong>f.</strong> Políticas de rebalanceo
+                    <br><br>
+                    El rebalanceo de las estrategias de inversión se define como, la posibilidad de la Sociedad Administradora de efectuar la recomposición de los diferentes portafolios de inversión propuestos a los Partícipes. Es decir, la facultad con la que cuenta dicha sociedad para incluir, excluir o redistribuir los portafolios. Lo anterior, en virtud de la autorización que le otorga el Partícipe a la Sociedad Administradora desde el momento en el que ingresa a la Alternativa Estandarizada. El rebalanceo se realizará de manera automática, con fundamento en dicha autorización.
+                    <br><br>
+                    Un rebalanceo busca las mejores condiciones frente a las necesidades del Partícipe y su conveniencia.  Se puede dar por una o varias razones, entre las cuales tenemos las siguientes, sin limitarse a ellas:
+                    <br><br>
+                    <strong>•</strong> Oportunidad de valor o protección de valor: cuando las condiciones de mercado indiquen una oportunidad de valorización o  riesgos previsibles de desvalorización para los activos que componen la Alternativa.
+                    <br><br>
+                    <strong>•</strong> Convergencia: se presenta cuando por análisis de conveniencia para el Partícipe sea necesario trasladarlo a portafolios con menor exposición de riesgo, con el fin de que alcance su objetivo, siempre y cuando dicha recomposición sea inferior o igual al perfilamiento del Partícipe.
+                    <br><br>
+                    <strong>•</strong> Cambio del perfil de cliente: se presenta cuando por análisis de conveniencia para el Partícipe sea necesario trasladarlo a portafolios con menor exposición de riesgo, con el fin de ajustarlo a su nuevo y menor perfil. Lo anterior, producto de las actualizaciones de perfil realizadas por él mismo.
+                    <br><br>
+                    <strong>•</strong> Desviación de la composición óptima: se presenta cuando por la evolución natural de los factores de riesgo, la composición del portafolio del Partícipe se desvía y se hace necesario ajustarla para volver a la configuración deseada.
+                    <br><br>
+                    Los rebalanceos no tienen una periodicidad definida, ya que su aplicación es determinada por las condiciones de mercado vigentes en un momento dado. No obstante, la validez de las estrategias de inversión es evaluada periódicamente. En esta evaluación, se define si la composición actual conserva su vigencia o si es necesario realizar un ajuste sobre la misma.
+                    <br><br>
+                    El procedimiento de rebalanceo se realiza por medio de la redistribución, inclusión o exclusión de portafolios en las cuentas individuales de los Partícipes de conformidad con la composición recomendada en el rebalanceo.  Una vez adelantado  dicho procedimiento, se pondrá en conocimiento del Partícipe dicha situación, quien adicionalmente tendrá a su disposición, en todo momento a través de los canales de consulta de su cuenta individual la composición del portafolio vigente y los movimientos realizados en la misma.
+                </p>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+//Confirmaciones y resultados
+.resultConfir {
+    display: inline-block;
+    width: 100%;
+
+    &__item {
+        display: inline-block;
+        width: 100%;
+        text-align: left;
+        position: relative;
+        color: $text-color;
+        background-color: $background-itemBoxes;
+        margin: 2.5px 0;
+        padding: 13px 15px;
+        border-radius: 5px;
+
+        &:first-of-type{
+            margin-top: 0;
+        }
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+
+        .title, .item {
+            display: inline-block;
+            width: 100%;
+            @include defaultFont(1);
+            margin-bottom: 0;
+
+            &.title{
+                font-weight: bold;
+            }
+
+            strong{
+                &.underline{
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        //Items disabled
+        &--disabled{
+            @extend .resultConfir__item;
+            opacity: 50%;
+        }
+
+        //Items with tooltip
+        &--padTooltip{
+            @extend .resultConfir__item;
+            padding-right: 40px;
+        }
+
+        //Items with small text
+        &--small{
+            @extend .resultConfir__item;
+            .title, .item{
+                display: inline;
+                @include defaultFont(1, $fz: $font-p - 2, $ta: justify );
+                a{
+                    @include defaultFont(0, $fz: 1em);
+                }
+                strong{
+                    @include defaultFont(0, $fw: bold,  $fz: 1em);
+                }
+            }
+        }
+
+        //Hidden - Oculto
+        &--hidden{
+            display: none;
+            .resultConfir__item{
+                margin-top: 2.5px;
+            }
+        }
+
+        &--isShow{
+            display: block;
+        }
+
+        &:hover{
+            background-color: darken($background-itemBoxes, 5%);
+        }
+
+    }
+}

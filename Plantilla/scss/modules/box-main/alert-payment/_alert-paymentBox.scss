@@ -1,0 +1,30 @@
+.contentBox--contenAlertPayment{
+    @include prefix((
+        display: flex,
+        align-items: flex-start,
+        align-content: center
+    ), webkit moz ms);
+
+    background-color: #fff;
+    box-shadow: none;
+    max-width: 650px;
+    margin: 10px auto 0;
+
+    img{
+        display: inline-block;
+        width: 100%;
+        max-width: 35px;
+
+        margin-top: 5px;
+        margin-right: 10px;
+    }
+
+    p{
+        @include defaultFont(1, $fz:$font-p - 2, $lh:1.4);
+        display: inline-block;
+        width: calc(100% - 35px);
+        strong{
+            @include defaultFont(0, $fw:bold);
+        }
+    }
+}
